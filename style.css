@@ -1,0 +1,269 @@
+/*
+Theme Name: Circle of Funk
+Author: Circle of Funk
+Author URI: http://www.circleoffunk.org
+Version 1.0
+*/
+
+/* Custom Fonts */
+@font-face {
+    font-family: funkydori;
+    src: url(fonts/UVFFunkydori.ttf);
+}
+
+/* Responsive Layout */
+@media only screen and (max-width: 995px) {
+	#menu {
+		display: none;
+	}
+
+	#bottomlinks {
+		display: none;
+	}
+}
+
+/* General Layout */
+body {
+	/* Funky Red and Funky Orange Gradient*/
+	background: -webkit-linear-gradient(rgb(229,22,54), rgb(244,111,27)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(229,22,54), rgb(244,111,27)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(229,22,54), rgb(244,111,27)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(229,22,54), rgb(244,111,27)); /* Standard syntax */
+}
+
+/* For general public messages such as Under Constroction */
+div.public_msg {
+	font-family: 'funkydori', cursive;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+
+/* Logo */
+#logo {
+	background: rgba(0,0,0,0) url("images/circle_of_funk_logo_black.svg") no-repeat top;
+	background-size: contain;
+	height: 200px;
+	margin-top: 40px;
+}
+
+/* Tagline */
+#tagline {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Menu Bar */
+#menu {
+	position: relative;
+	height: 50px;
+	margin: 0 auto;
+	border-top: 1px solid rgb(91,5,45); /* Funky Maroon */
+	border-bottom: 1px solid rgb(91,5,45); /* Funky Maroon */
+	border-left: 0;
+	border-right: 0;
+	margin-top: 20px;
+	text-align: center;
+	border-radius: 30px;
+}
+#menu ul li {
+	display: inline-block;
+	list-style: none;
+	font-size: 36px;
+	font-family: 'funkydori', cursive;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 30px;
+	color: black;
+}
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: rgb(91,5,45); /* Funky Maroon */
+	padding: 10px;
+	transition: 0.3s;
+}
+#menu ul li a:hover {
+	text-decoration: none;
+	color: white;
+	/* Funky Maroon Gradient */
+	background: -webkit-linear-gradient(rgb(91,5,45), rgb(110,35,70)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(91,5,45), rgb(110,35,70)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(91,5,45), rgb(110,35,70)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(91,5,45) rgb(110,35,70)); /* Standard syntax */
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+#menu ul li.current-menu-item a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	/* Funky Maroon Gradient */
+	background: -webkit-linear-gradient(rgb(91,5,45), rgb(110,35,70)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(91,5,45), rgb(110,35,70)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(91,5,45), rgb(110,35,70)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(91,5,45) rgb(110,35,70)); /* Standard syntax */
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/* Page Content */
+div.pagecontent {
+	min-height: 250px;
+	background-color: rgba(0,0,0,0.1);
+	max-width: 970px;
+	border-radius: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+div.pagecontent a {
+	text-decoration: none;
+	color: white;
+}
+div.pagecontent a:hover {
+	color: rgb(151,217,246); /* Funky Blue */
+}
+
+/* Each Excerpt - Preview of Posts */
+div.preview {
+	display: flex;
+}
+div.excerpt {
+	margin-left: 10px;
+}
+
+/* All Posts and Each Post */
+article.post {
+	overflow: hidden;
+	border-bottom: 1px dotted white;
+}
+article.post:last-of-type {
+	border-bottom: none;
+}
+
+/* Each Post */
+article.eachpost {
+	display: relative;
+}
+
+/* Posted By */
+div.posted_by {
+	display: block;
+	font-size: 12px;
+}
+div.posted_by a {
+	font-size: 12px;
+	text-decoration: underline;
+	color: white;
+}
+div.posted_by a:hover {
+	color: rgb(151,217,246); /* Funky Blue */
+}
+
+/* Post Title */
+span.post-title {
+	font-family: 'funkydori', cursive;
+	color: white;
+	font-size: 72px;
+	text-align: center;
+}
+div.post-title {
+	font-family: 'funkydori', cursive;
+	color: white;
+	font-size: 72px;
+	text-align: center;
+}
+
+/* Footer Links */
+#bottomlinks {
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+#bottomlinks ul {
+	padding-left: 0;
+	margin-left: 0;
+}
+#bottomlinks ul li {
+	display: inline-block;
+	list-style: none;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right: 1px dotted rgb(91,5,45); /* Funky Maroon */
+}
+#bottomlinks ul li:last-of-type {
+	padding-right: 0px;
+	margin-right: 0px;
+	border-right: 0px;
+}
+#bottomlinks ul li a {
+	text-decoration: none;
+	color: rgb(91,5,45); /* Funky Maroon */
+}
+#bottomlinks ul li a:hover {
+	color: white;
+}
+
+/* Footer Copyright */
+div.copyright {
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	color: rgb(91,5,45); /* Funky Maroon */
+}
+
+/* Footer Social Media Links */
+#social {
+	text-align: right;
+}
+#social ul li {
+	display: inline-block;
+	list-style: none;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right: 1px dotted rgb(91,5,45); /* Funky Maroon */
+}
+#social ul li:last-of-type {
+	padding-right: 0px;
+	margin-right: 0px;
+	border-right: 0px;
+}
+#social ul li a {
+	text-decoration: none;
+	color: rgb(91,5,45); /* Funky Maroon */
+}
+#social ul li a:hover {
+	color: white;
+}
+
+/* Instagram Images */
+#instagram {
+	padding: .5vw;
+	font-size: 0;
+	display: -ms-flexbox;
+	-ms-flex-wrap: wrap;
+	-ms-flex-direction: column;
+	-webkit-flex-flow: row wrap; 
+	flex-flow: row wrap; 
+	display: -webkit-box;
+	display: flex;
+}
+#instagram div {
+	
+}
+#instagram div img {
+	width: 220px;
+  	height: auto;
+  	margin: 2px;
+  	background-color: white;
+  	padding: 3px;
+}
+
